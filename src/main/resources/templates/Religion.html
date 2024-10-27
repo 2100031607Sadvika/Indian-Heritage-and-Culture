@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Reference Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+	<!-- Reference Bootstrap and local files -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" th:href="@{css/slick.css}">
+	<link rel="stylesheet" th:href="@{css/slick-theme.css}">
+	<link rel="stylesheet" th:href="@{css/home1.css}">
+	<link rel="icon" th:href="@{images/header/white-logo.png}">
+
+	<title>Heritage and Culture</title>
+</head>
+
+<body>
+
+	<div class="main-overlay js-main-overlay"></div>
+
+	<!-- Main Cover Section -->
+	<section class="cover-main" id="home">
+		<header>
+			<nav class="nav-wrapper">
+				<div class="logo">
+					<a href="#"> <img src="images/header/white-logo.png" class="logo">
+					</a>
+				</div>
+				<!-- Menu bar -->
+				<ul class="menu">
+					<li><a th:href="@{/process-login}">Back</a></li>
+					<li><a th:href="@{/logout}">Sign Out</a></li>
+				</ul>
+			</nav>
+			<div class="menu-trigger js-menu-trigger"></div>
+		</header>
+		<!-- Main buttons and title -->
+		<div class="wrapper">
+			<ul id="scene" data-invert-x="false" data-invert-y="false" data-scalar-x="7" data-scalar-y="7"
+				data-friction-x="0.1" data-friction-y="0.1" data-origin-x="0.5" data-origin-y="0.5">
+				<li class="layer name" data-depth="0.90">Heritage And Culture</li>
+				<li class="layer title" data-depth="0.50">Festivals in India!</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section-padding" id="work">
+		<h2 class="sub-title">Festivals</h2>
+		<div class="container-rooms">
+			<div class="row-room">
+
+				<!-- Single room card -->
+				<div class="col-md-4 col-sm-6">
+					<div class="col-xs-12 fix_p_r">
+						<div class="slide-item card" style="padding: 10px;">
+							<h3>Dussehra</h3>
+							<a ><img src="https://2.bp.blogspot.com/-FIS6Z7p_XWU/UHnLCuuKpCI/AAAAAAAAAM4/j9hEoiHVMeU/s1600/Dussehra-festiva.bmp"></a>
+							<center><a th:href="@{/dussehra}" class="reservation-btn">Know More</a> </center>
+							
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="col-xs-12 fix_p_r">
+						<div class="slide-item card" style="padding: 10px;">
+							<h3>Onam</h3>
+							<a ><img src="
+https://www.travelbeginsat40.com/wp-content/uploads/2019/05/Onam10-1024x670.jpg"></a>
+							<center><a th:href="@{/onam}" class="reservation-btn">Know More</a> </center>
+							 
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="col-xs-12 fix_p_r">
+						<div class="slide-item card" style="padding: 10px;">
+							<h3>Ganesh Chaturthi</h3>
+							<a ><img src="https://epkamawxi3y.exactdn.com/wp-content/uploads/2023/09/Ganesh-Chaturthi-2023-24.jpg?strip=all&lossy=1&webp=70&ssl=1"></a>
+							<center><a th:href="@{/ganesh}" class="reservation-btn">Know More</a> </center>
+							
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="col-xs-12 fix_p_r">
+						<div class="slide-item card" style="padding: 10px;">
+							<h3>Sankranthi</h3>
+							<a ><img src="https://s3images.zee5.com/wp-content/uploads/sites/7/2020/01/Sankranti-Kannada.jpg"></a>
+							<center><a th:href="@{/sankranti}" class="reservation-btn">Know More</a> </center>
+							
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="col-xs-12 fix_p_r">
+						<div class="slide-item card" style="padding: 10px;">
+							<h3>Holi</h3>
+							<a ><img src="https://tse1.mm.bing.net/th?id=OIP.trWip-a-DKGl_DV8f09eiAHaE8&pid=Api&P=0&h=180"></a>
+							<center><a th:href="@{/holi}" class="reservation-btn">Know More</a> </center>
+							
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="col-xs-12 fix_p_r">
+						<div class="slide-item card" style="padding: 10px;">
+							<h3>Diwali</h3>
+							<a ><img src="http://media.cntraveller.in/wp-content/uploads/2016/10/diwalifireworkslead.jpg"></a>
+							<center><a th:href="@{/diwali}" class="reservation-btn">Know More</a> </center>
+							
+						</div>
+
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+
+	
+
+	<!-- Reference Javascript and local files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<script th:src="@{scripts/parallax.min.js}"></script>
+	<script th:src="@{scripts/slick.min.js}"></script>
+	<script th:src="@{scripts/home.js}"></script>
+
+</body>
+
+</html>
